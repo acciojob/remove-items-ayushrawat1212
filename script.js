@@ -10,7 +10,7 @@ function removeSelectedColor() {
 	//check if a valid item is actually selected
 	if(colorDropDown.selectedIndex !== -1) {
 		//remove the item
-		colorDropDown.remove(colorDropDown.selectedIndex);
+		colorDropDown.options[colorDropDown.selectedIndex].remove();
 	}
 }
 
